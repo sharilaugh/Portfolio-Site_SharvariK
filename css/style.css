@@ -86,19 +86,6 @@ a:focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
-.button.contact {
-  background-color: transparent;
-  color: #B6E8E3;
-  text-transform: uppercase;
-  border: 2px solid #B6E8E3;
-}
-
-.button.contact:hover {
-  background-color: #B6E8E3;
-  color: #ffffff;
-}
-
 .button.project {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #B6E8E3;
@@ -113,4 +100,16 @@ a:focus {
 .button.project:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #B6E8E3;
+  text-transform: uppercase;
+  border: 2px solid #B6E8E3;
+}
+
+.button.contact:hover {
+  background-color: #B6E8E3;
+  color: #ffffff;
 }
