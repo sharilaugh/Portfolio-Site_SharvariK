@@ -14,13 +14,14 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+
   <body>
     <header>
 
-      <div>
-        <img src="img/Picture logo.svg" alt="Your Logo">
+      <div class="container" >
+        <img src="img/Picture logo.svg" class="logo" alt="Your Logo">
         <nav>
-          <ul>
+          <ul class="navigation">
             <li><a class="menu-link" href="index.html">Work</a></li>
             <li><a class="menu-link" href="about.html">About</a></li>
             <li><a class="menu-link" href="#contact">Contact</a></li>
@@ -32,9 +33,10 @@
 
     <main><!--whole section after header -->
 
-      <div><!-- holds the Hero section -->
 
-        <div>
+      <div id="hero"><!-- holds the Hero section -->
+
+        <div class="container">
           <h1>Sharvari Kulkarni
             <span>Designer | Graphic | UI | A Creative</span>
           </h1>
@@ -43,21 +45,20 @@
           </p>
         </div>
 
-      </div>
+      </div id="hero">
 
-      <div><!-- work block -->
-        <div><!-- wrapper -->
+      <div id="work"><!-- work block -->
+        <div class="container"><!-- wrapper -->
           <h2>My Work</h2>
 
           <div><!-- open block for columns for project content -->
 
-            <div><!-- 1st column for projext_A text -->
+            <div class="row"><!-- 1st column for projext_A text -->
               <h3>CookIn Food App UX/UI Case Study</h3>
               <p>OVERVIEW: CookIn is a cooking app that lets any skill level chef follow and create
                 foodie masterpieces through personalized algorithms.
               </p>
               <a href="CookIn.html" class="button project">View Project</a>
-              <br></br>
               <h5><!-- skills used in project -->
                 UX/UI Design Case Study
                 <br></br>UX Research
@@ -67,19 +68,18 @@
               </h5>
             </div><!-- end 1st column -->
 
-            <div><!-- 2nd column for thumbnail_A -->
+            <div class="row"><!-- 2nd column for thumbnail_A -->
               <picture><!-- thumbnail of project -->
   <source srcset="img/cookin/CookIn thumbnail1000.png" media="(max-width:767px)">
   <img src="img/cookin/CookIn thumbnail1000.png" alt="My Image">
 </picture>
             </div><!-- end 2nd column -->
 
-            <div><!-- 1st column for project_B text -->
+            <div class="row"><!-- 1st column for project_B text -->
               <h3>BV Product Catalog</h3>
               <p>OVERVIEW: Product catalog for e-Commerce business to showcase the catalog to customers and external partners.
               </p>
               <a href="Product Catalog.html" class="button project">View Project</a>
-              <br></br>
               <h5><!-- skills used in project -->
                 Image Composite
                 <br></br>Image Manipulation
@@ -89,7 +89,7 @@
               </h5>
             </div><!-- end 1st column -->
 
-            <div><!-- 2nd column for thumbnail_B -->
+            <div class="row"><!-- 2nd column for thumbnail_B -->
               <picture><!-- thumbnail of project -->
           <source srcset="img/corporate catalog/Corporate Catalog1000x1000.png" media="(max-width:767px)">
           <img src="img/corporate catalog/Corporate Catalog1000x1000.png" alt="My Image">
@@ -98,11 +98,11 @@
           </div><!-- end block for columns for project content -->
 
         </div><!-- end wrapper -->
-      </div><!-- end work block -->
+      </div id="work"><!-- end work block -->
 
 
       <footer id="contact">
-        <div><!-- open wrapper -->
+        <div class="container"><!-- open wrapper -->
 
           <h2>Get in Touch</h2>
           <p>Do you like my work and want to discuss opportunities? Please get in touch. Call:
@@ -113,10 +113,10 @@
               <a href="mailto:sharvari1kulkarni@gmail.com" class="button contact">Send me an email</a>
             </div><!-- end button -->
           <div><!--Social Media Layout and Placeholders-->
-              <a href="https://www.linkedin.com/in/sharvari-kulkarni/" target="_blank">
+              <a href="https://www.linkedin.com/in/sharvari-kulkarni/" class="icons" target="_blank">
                 <img src="img/iconfinder_LinkedIn_social_network_logo_1920528.svg">
               </a>
-             <a href="TWITTER-URL" target="_blank">
+             <a href="TWITTER-URL" class="icons" target="_blank">
                <!-- Twitter Icon -->
                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
         <g>
@@ -131,7 +131,7 @@
         </g>
             </svg>
              </a>
-             <a href="https://www.instagram.com/sharvari28/?hl=en" target="_blank">
+             <a href="https://www.instagram.com/sharvari28/?hl=en" class="icons" target="_blank">
                <img src="img/iconfinder_1_Instagram_colored_svg_1_5296765.svg">
              </a>
           </div>

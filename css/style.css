@@ -49,6 +49,13 @@ img {
   width: 100%;
 }
 
+.icons {
+  width: 10%;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
 a {
   color: #B6E8E3;
   text-decoration: none; /* No underlining */
@@ -58,9 +65,6 @@ a:hover {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:visited { /* visited link */
-  color: #B6E8E3;
-}
 a:active { /* selected link */
   color: #2B7C74;
 }
@@ -112,4 +116,65 @@ a:focus {
 .button.contact:hover {
   background-color: #B6E8E3;
   color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 15px; border-bottom: 3px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+header {
+  background-color: #B6E8E3;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.6);
+  position: relative;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 0 0 0;
+}
+
+nav > ul > li > a {
+  padding: 0 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #B6E8E3;
+  padding: 20px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#about h1 {
+  text-align: center; /* Centers text */
+  background-color: #B6E8E3;
+  padding: 10px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
