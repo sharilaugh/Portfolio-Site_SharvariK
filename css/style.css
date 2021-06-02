@@ -23,6 +23,10 @@ body {
   color: #4a4a4a;
 }
 
+p {
+  line-height: normal;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -47,6 +51,8 @@ h4 {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .icons {
@@ -57,7 +63,7 @@ img {
 }
 
 a {
-  color: #B6E8E3;
+  color: #3f51b5;
   text-decoration: none; /* No underlining */
 }
 a:hover {
@@ -77,12 +83,12 @@ a:focus {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #B6E8E3;
+  background-color: #3f51b5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #2B7C74; /* width of the border, type, color */
+  border-bottom: 2px solid #00bcd4; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -92,12 +98,12 @@ a:focus {
 }
 .button.project {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #B6E8E3;
+  background-color: #3f51b5;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #2B7C74; /* width of the border, type, color */
+  border-bottom: 2px solid #00bcd4; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -108,14 +114,19 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
-  color: #B6E8E3;
+  color: #3f51b5;
   text-transform: uppercase;
-  border: 2px solid #B6E8E3;
+  border: 2px solid #3f51b5;
 }
 
 .button.contact:hover {
-  background-color: #B6E8E3;
+  background-color: #3f51b5;
   color: #ffffff;
+}
+
+.number {
+  color: #3f51b5;
+
 }
 
 /* Layout styling */
@@ -127,7 +138,8 @@ a:focus {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 15px; border-bottom: 3px solid #4a4a4a; }
+#work .row { padding-bottom: 15px; border-bottom: 2px dotted #00bcd4;
+}
 
 #hero h1 {
   text-align: center; /* Centers text */
@@ -136,7 +148,6 @@ a:focus {
 .logo {
   max-width: 250px;
   width: 100%;
-  padding: 15px 0;
 }
 
 header {
@@ -149,6 +160,10 @@ header {
   position: relative;
 }
 
+.navigation {
+  padding: 0 0;
+}
+
 nav > ul > li {
   display: inline-block;
   list-style-type: none;
@@ -156,10 +171,65 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 25px;
+  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 15px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.indigo
+{
+    background: #3f51b5;
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
 }
 
 #hero {
@@ -188,4 +258,96 @@ footer {
   margin: 0 15px;
   padding-bottom: 15px;
   border-top: 3px solid #4a4a4a;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    padding: 20px 0;
+    font-size: 1.25em;
+  }
+  #hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+#hero h1 {
+  font-size: 3.00em;
+}
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+#berlin-illustration: {
+  align: center;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
