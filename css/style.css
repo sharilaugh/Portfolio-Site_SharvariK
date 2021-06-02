@@ -178,3 +178,14 @@ nav > ul > li > a {
   text-align: center;
   width: 100%;
 }
+
+footer {
+  border-bottom: 3px;
+  text-align: center;
+}
+
+#about footer {
+  margin: 0 15px;
+  padding-bottom: 15px;
+  border-top: 3px solid #4a4a4a;
+}
