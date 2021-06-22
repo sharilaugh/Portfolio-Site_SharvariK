@@ -146,13 +146,12 @@ a:focus {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   width: 100%;
 }
 
 header {
   background-color: #B6E8E3;
-  text-align: center;
   padding: 15px 0;
   -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.6);
   -moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.6);
@@ -164,10 +163,24 @@ header {
   padding: 0 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 10px 0 0 0;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 nav > ul > li > a {
@@ -264,9 +277,25 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 0 0 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+  .logo {
+    max-width: 250px;
+  }
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
+    text-align: unset;
+    padding: 20px 0 13px;
   }
   nav {
     width: auto;
@@ -276,7 +305,7 @@ Medium devices (640px and larger)
     font-size: 1.25em;
   }
   #hero span {
-  display: block;
+    display: block;
 }
 .col-md-6 {
   width: 50%;
