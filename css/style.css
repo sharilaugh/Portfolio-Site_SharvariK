@@ -183,7 +183,12 @@ header {
   display: block;
 }
 
-nav > ul > li > a {
+nav ul {
+  list-style-type: none;
+  align-content: center;
+}
+
+nav ul li a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -243,6 +248,18 @@ div.topLeftBorders a:hover:after
 {
     opacity: 0;
     top: 100%;
+}
+
+div.navtoggle.responsive div.topLeftBorders a:after {
+  top: 36px;
+  text-align left: auto;
+  width: 70%;
+  height: 1.5px;
+}
+
+div.navtoggle.responsive div.container.indigo.topLeftBorders {
+  position: right;
+  padding: 10px;
 }
 
 #hero {
