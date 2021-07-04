@@ -260,6 +260,7 @@ div.navtoggle.responsive div.topLeftBorders a:after {
 div.navtoggle.responsive div.container.indigo.topLeftBorders {
   position: right;
   padding: 10px;
+  float: right;
 }
 
 #hero {
