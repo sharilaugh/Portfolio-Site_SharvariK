@@ -3,23 +3,29 @@ Colors used:
 Primary Color (Blue): #4378FF;
 Secondary Color (Teal): #B6E8E3;
 */
-
 body {
-    background-color: #F7F7F7;
-  }
+  background-color: #f7f7f7;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet" >
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+
+  /* Sets the font size to 16px */
+  font-weight: 300;
+
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
@@ -27,25 +33,30 @@ p {
   line-height: normal;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.00em;
+  font-size: 2em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.50em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.00em;
+  font-size: 1em;
   font-weight: 400;
 }
+
 h4 {
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: 400;
 }
 
@@ -64,51 +75,74 @@ img {
 
 a {
   color: #3f51b5;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #41BAAE;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none;
+
+  /* No underlining */
 }
 
-a:active { /* selected link */
-  color: #2B7C74;
+a:hover {
+  color: #41baae;
+  text-decoration: underline;
+
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #2b7c74;
 }
 
 a:hover,
 a:focus {
-  color: #41BAAE;
+  color: #41baae;
   text-decoration: underline;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #3f51b5;
-  color: #ffffff; /* needed to override the default link color */
+  color: #fff;
+
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #00bcd4; /* width of the border, type, color */
+  border-bottom: 2px solid #00bcd4;
+
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.project {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #3f51b5;
-  color: #ffffff; /* needed to override the default link color */
+  color: #fff;
+
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #00bcd4; /* width of the border, type, color */
+  border-bottom: 2px solid #00bcd4;
+
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button.project:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -121,12 +155,11 @@ a:focus {
 
 .button.contact:hover {
   background-color: #3f51b5;
-  color: #ffffff;
+  color: #fff;
 }
 
 .number {
   color: #3f51b5;
-
 }
 
 /* Layout styling */
@@ -135,14 +168,20 @@ a:focus {
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 15px; border-bottom: 2px dotted #00bcd4;
+#work .row {
+  padding-bottom: 15px;
+  border-bottom: 2px dotted #00bcd4;
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+
+  /* Centers text */
 }
 
 .logo {
@@ -151,23 +190,24 @@ a:focus {
 }
 
 header {
-  background-color: #B6E8E3;
+  background-color: #b6e8e3;
   padding: 15px 0;
-  -webkit-box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.6);
-  -moz-box-shadow:    0px 7px 5px 0px rgba(50, 50, 50, 0.6);
-  box-shadow:         0px 7px 5px 0px rgba(50, 50, 50, 0.6);
+  -webkit-box-shadow: 0 7 5 0 rgba(50, 50, 50, 0.6);
+  -moz-box-shadow: 0 7 5 0 rgba(50, 50, 50, 0.6);
+  box-shadow: 0 7 5 0 rgba(50, 50, 50, 0.6);
   position: relative;
 }
 
 .navigation {
-  padding: 0 0;
+  padding: 0;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -179,7 +219,7 @@ header {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -195,64 +235,58 @@ nav ul li a {
   color: #4a4a4a;
 }
 
-div.container a
-{
-    color: #FFF;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 10px;
-    padding: 15px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+div.container a {
+  color: #fff;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0 10;
+  padding: 15px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
 
-.indigo
-{
-    background: #3f51b5;
+.indigo {
+  background: #3f51b5;
 }
 
 /* Top border go down and Left border appears */
-div.topLeftBorders a:before
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 2px;
-    height: 0px;
-    background: #FFF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+div.topLeftBorders a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background: #fff;
+  content: "";
+  opacity: 1;
+  transition: all 0.3s;
 }
 
-div.topLeftBorders a:after
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+div.topLeftBorders a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 1;
+  transition: all 0.3s;
 }
 
-div.topLeftBorders a:hover:before
-{
-    height: 100%;
+div.topLeftBorders a:hover::before {
+  height: 100%;
 }
 
-div.topLeftBorders a:hover:after
-{
-    opacity: 0;
-    top: 100%;
+div.topLeftBorders a:hover::after {
+  opacity: 0;
+  top: 100%;
 }
 
-div.navtoggle.responsive div.topLeftBorders a:after {
+div.navtoggle.responsive div.topLeftBorders a::after {
   top: 36px;
-  text-align left: auto;
+  text-align: auto;
   width: 70%;
   height: 1.5px;
 }
@@ -264,7 +298,7 @@ div.navtoggle.responsive div.container.indigo.topLeftBorders {
 }
 
 #hero {
-  background-color: #B6E8E3;
+  background-color: #b6e8e3;
   padding: 20px 0;
   display: inline-block;
   text-align: center;
@@ -272,11 +306,12 @@ div.navtoggle.responsive div.container.indigo.topLeftBorders {
 }
 
 #about h1 {
-  text-align: center; /* Centers text */
-  background-color: #B6E8E3;
+  text-align: center;
+
+  /* Centers text */
+  background-color: #b6e8e3;
   padding: 10px 0;
   display: inline-block;
-  text-align: center;
   width: 100%;
 }
 
@@ -298,23 +333,26 @@ Medium devices (640px and larger)
   nav > ul > li {
     display: inline-block;
     list-style-type: none;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
   .logo {
     max-width: 250px;
   }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
@@ -322,20 +360,24 @@ Medium devices (640px and larger)
     padding: 20px 0;
     font-size: 1.25em;
   }
+
   #hero span {
     display: block;
-}
-.col-md-6 {
-  width: 50%;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-[class*="col-"] {
-  float: left;
-}
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
 }
 
 /* ==============================
@@ -343,29 +385,34 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
-}
-#hero h1 {
-  font-size: 3.00em;
-}
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+
+  #hero h1 {
+    font-size: 3em;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
-
-#berlin-illustration: {
-  align: center;
+  #berlin-illustration: {
+    align: center;
+  }
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -377,8 +424,13 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -390,8 +442,13 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
