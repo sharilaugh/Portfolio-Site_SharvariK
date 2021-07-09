@@ -8,25 +8,18 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-<link rel="preconnect" href="https://fonts.googleapis.com" >
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet" >
-body {
-  background-color: #fff;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 
   /* Sets the font size to 16px */
-  font-weight: 300;
+  font-weight: 400;
 
   /* Sets the font weight to 300 */
   line-height: 1.6;
 
   /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #231f20;
 }
 
 p {
@@ -41,23 +34,24 @@ h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 h3 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
+  color: #4378ff;
 }
 
 h4 {
-  font-size: 0.75em;
-  font-weight: 400;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 img {
@@ -74,27 +68,22 @@ img {
 }
 
 a {
-  color: #3f51b5;
+  color: #4378ff;
   text-decoration: none;
 
   /* No underlining */
 }
 
 a:hover {
-  color: #41baae;
+  color: #fff;
   text-decoration: underline;
 
   /* Underlining when hovering over a link */
 }
 
-a:active {
-  /* selected link */
-  color: #2b7c74;
-}
-
 a:hover,
 a:focus {
-  color: #41baae;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -102,14 +91,13 @@ a:focus {
   display: inline-block;
 
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #3f51b5;
-  color: #fff;
+  background-color: #4378ff;
+  color: #231f20;
 
   /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
+  font-weight: 200;
+  padding: 30px;
   border-radius: 3px;
-  border-bottom: 2px solid #00bcd4;
 
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -126,14 +114,15 @@ a:focus {
   display: inline-block;
 
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #3f51b5;
+  background-color: #4378ff;
   color: #fff;
 
   /* needed to override the default link color */
   font-weight: 400;
+  font-size: 17px;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #00bcd4;
+  margin: auto;
 
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -148,40 +137,29 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
-  color: #3f51b5;
+  text-align: center;
+  color: #4378ff;
   text-transform: uppercase;
-  border: 2px solid #3f51b5;
+  border: 2px solid #4378ff;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 20px;
 }
 
 .button.contact:hover {
-  background-color: #3f51b5;
+  background-color: #4378ff;
   color: #fff;
-}
-
-.number {
-  color: #3f51b5;
 }
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 30px 0;
 
   /* 25px top and bottom, 0 left and right */
-}
-
-#work .row {
-  padding-bottom: 15px;
-  border-bottom: 2px dotted #00bcd4;
-}
-
-#hero h1 {
-  text-align: center;
-
-  /* Centers text */
 }
 
 .logo {
@@ -190,16 +168,85 @@ a:focus {
 }
 
 header {
-  background-color: #b6e8e3;
+  background-color: #4378ff;
   padding: 15px 0;
-  -webkit-box-shadow: 0 7 5 0 rgba(50, 50, 50, 0.6);
-  -moz-box-shadow: 0 7 5 0 rgba(50, 50, 50, 0.6);
-  box-shadow: 0 7 5 0 rgba(50, 50, 50, 0.6);
+  -webkit-box-shadow: 6px 6px 10px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 6px 6px 10px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 6px 6px 10px 0 rgba(50, 50, 50, 0.75);
   position: relative;
+}
+
+#hero {
+  background-color: #4378ff;
+  padding: 20px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  color: #fff;
+
+  /* Centers text */
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work .row {
+  padding-bottom: 20px;
+  border-bottom: 5px dotted #4378ff;
+}
+
+footer {
+  border-bottom: 3px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+/* Centers profile picture */
+
+#about h1 {
+  text-align: center;
+
+  /* Centers text */
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about .row {
+  padding-bottom: 20px;
+  border-bottom: 5px dotted #4378ff;
+}
+
+.cv {
+  text-align: center;
+}
+
+/* resume button styling */
+
+#about footer {
+  margin: 0 15px;
+  padding-bottom: 15px;
+  border-top: 3px solid #4a4a4a;
 }
 
 .navigation {
   padding: 0;
+  position: fixed;
 }
 
 .navtoggle li:not(:last-child) {
@@ -239,7 +286,7 @@ div.container a {
   color: #fff;
   text-decoration: none;
   font: 20px Raleway;
-  margin: 0 10;
+  margin: 0 10px;
   padding: 15px 10px;
   position: relative;
   z-index: 0;
@@ -247,7 +294,7 @@ div.container a {
 }
 
 .indigo {
-  background: #3f51b5;
+  background: #231f20;
 }
 
 /* Top border go down and Left border appears */
@@ -295,35 +342,6 @@ div.navtoggle.responsive div.container.indigo.topLeftBorders {
   position: right;
   padding: 10px;
   float: right;
-}
-
-#hero {
-  background-color: #b6e8e3;
-  padding: 20px 0;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-#about h1 {
-  text-align: center;
-
-  /* Centers text */
-  background-color: #b6e8e3;
-  padding: 10px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-footer {
-  border-bottom: 3px;
-  text-align: center;
-}
-
-#about footer {
-  margin: 0 15px;
-  padding-bottom: 15px;
-  border-top: 3px solid #4a4a4a;
 }
 
 /* ==============================
