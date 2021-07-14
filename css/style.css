@@ -256,6 +256,7 @@ footer {
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
+  overflow: auto;
 }
 
 .navtoggle li .icon {
